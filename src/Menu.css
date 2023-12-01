@@ -1,7 +1,15 @@
 body {
     margin: 0;
   }
-  
+
+  .titulo  {
+    text-align: center;
+  }
+
+  .iframe {
+    align-items: center;
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
