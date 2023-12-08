@@ -8,3 +8,22 @@ function Videos() {
     const [descricao, setDescricao] = useState("");
     const [url, setUrl] = useState("");
 }
+
+function addVideo(e) {
+    e.preventDefault();
+    setVideo([...video, {
+        id: id,
+        titulo: titulo,
+        descricao: descricao,
+        url: url,
+      },
+    ]);
+    setId(id + 1);
+    setTitulo("");
+    setDescricao("");
+    setUrl("");
+  }
+
+  useEffect(() => {
+    localStorage.setItem("Lista", JSON.stringify(videos));
+  }, [videos]);
