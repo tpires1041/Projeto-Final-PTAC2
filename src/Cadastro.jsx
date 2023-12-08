@@ -1,19 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-export default function Cadastro(){
-    return(
-        <form>
-        <label for="nome">Nome do vídeo</label>
-        <input type="text" id="nome" name="nome"></input>
-
-        <label for="descricao">Nome do vídeo</label>
-        <input type="text" id="descricao" name="descricao"></input>
-
-        <label for="descricao">Nome do vídeo</label>
-        <input type="text" id="descricao" name="descricao"></input>
-        
-    </form>
-    )
-    
-
+function Videos() {
+    const listaLocalStorage = JSON.parse(localStorage.getItem("Lista") || "[]");
+    const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
+    const [dadosVideo, setVideo] = useState(listaLocalStorage || []);
+    const [titulo, setTitulo] = useState("");
+    const [descricao, setDescricao] = useState("");
+    const [url, setUrl] = useState("");
 }
