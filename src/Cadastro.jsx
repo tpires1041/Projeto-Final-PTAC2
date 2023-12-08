@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./Cadastro.css";
 
 function Videos() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista") || "[]");
@@ -7,11 +8,11 @@ function Videos() {
     const [titulo, setTitulo] = useState("");
     const [descricao, setDescricao] = useState("");
     const [url, setUrl] = useState("");
-}
+
 
 function addVideo(e) {
     e.preventDefault();
-    setVideo([...video, {
+    setVideo([...dadosVideo, {
         id: id,
         titulo: titulo,
         descricao: descricao,
@@ -73,3 +74,5 @@ function addVideo(e) {
       </div>
 
   );
+}
+  export default Videos;
