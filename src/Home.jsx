@@ -9,7 +9,6 @@ export default function Home(){
 
     return(
         <div>
-            <Menu />
             {video.map((videos, index) => (
                             <Card key={index} voos={videos} />
                         ))}
