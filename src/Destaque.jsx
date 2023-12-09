@@ -5,12 +5,12 @@ import Card from './Componentes/Card'
 
 const video = JSON.parse(localStorage.getItem("Lista")) || [];
 console.log(video)
-export default function Home(){
+export default function Destaque(){
 
     return(
         <div>
             <Menu />
-            {video.map((videos, index) => (
+            {video.slice(-4).map((videos, index) => (
                             <Card key={index} voos={videos} />
                         ))}
         </div>

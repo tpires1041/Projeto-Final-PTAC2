@@ -5,6 +5,7 @@ import Card from './Componentes/Card'
 
 const video = JSON.parse(localStorage.getItem("Lista")) || [];
 console.log(video)
+const filtraId = 
 export default function Home(){
 
     return(

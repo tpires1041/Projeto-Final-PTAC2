@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Componentes/Cadastro.module.css";
 
-function Videos() {
+export default function Videos() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista") || "[]");
     const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
     const [dadosVideo, setVideo] = useState(listaLocalStorage || []);
     const [titulo, setTitulo] = useState("");
     const [descricao, setDescricao] = useState("");
     const [url, setUrl] = useState("");
+    const [canal, setCanal] = useState("");
+    const [data, setData] = useState("");
+    const [aeronave, setAeronave] = useState("");
+
 
 
 function addVideo(e) {
@@ -67,6 +71,36 @@ function addVideo(e) {
               }}
             />
           </div>
+          <div>
+            <label>Canal: </label>
+            <input
+              type="text"
+              value={canal}
+              onChange={(e) => {
+                setCanal(e.target.value);
+              }}
+            />
+          </div>
+          <div>
+            <label>Data: </label>
+            <input
+              type="text"
+              value={data}
+              onChange={(e) => {
+                setData(e.target.value);
+              }}
+            />
+          </div>
+          <div>
+            <label>Aeronave: </label>
+            <input
+              type="text"
+              value={aeronave}
+              onChange={(e) => {
+                setAeronave(e.target.value);
+              }}
+            />
+          </div>
         </div>
     </div>
 
@@ -79,4 +113,3 @@ function addVideo(e) {
 </div>
   );
 }
-  export default Videos;
