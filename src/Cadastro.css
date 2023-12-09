@@ -12,6 +12,12 @@
     background-color: #f4f4f4;
   }
 
+  .container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+
 
   .flex-container > div {
     margin: 10px;
