@@ -5,15 +5,13 @@ import Card from './Componentes/Card'
 
 const video = JSON.parse(localStorage.getItem("Lista")) || [];
 console.log(video)
-const filtraId = 
-export default function Home(){
+const filtraId = video.find((objeto) => objeto.id == id) || null;
+export default function Detalhe(){
 
     return(
         <div>
             <Menu />
-            {video.map((videos, index) => (
-                            <Card key={index} voos={videos} />
-                        ))}
+            <Card voos={filtraId}/>
         </div>
      );
 }
