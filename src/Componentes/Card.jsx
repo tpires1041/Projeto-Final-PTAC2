@@ -18,7 +18,7 @@ export default function Card({ voos}) {
                 ></iframe>
                 <h6>{voos.titulo}</h6>
                 <p>{voos.descricao}</p>
-                <Link to="/">
+                <Link to={`/detalhe/${voos.id}`}>
                     <button>Ir para a outra página</button>
                 </Link>
             </div>

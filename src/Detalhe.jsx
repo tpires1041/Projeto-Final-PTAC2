@@ -15,8 +15,8 @@ export default function Detalhe(){
     console.log(filtraId)
     return(
         <div>
-            <Menu />
             <Card voos={filtraId}/>
+            <h2>{filtraId.canal}</h2>
         </div>
      );
 }
