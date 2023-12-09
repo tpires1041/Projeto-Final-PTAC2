@@ -1,5 +1,4 @@
 import React from "react";
-import "/Cadastro.jsx";
 
 function YoutubeEmbed(props) {
     const { videoId } = props;
@@ -8,8 +7,8 @@ function YoutubeEmbed(props) {
       <iframe
         width="560"
         height="315"
-        src={url}
-        title={titulo}
+        src="https://www.youtube.com/embed/QdBZY2fkU-0?si=qRyN5e9icC9JK_nc"
+        title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen

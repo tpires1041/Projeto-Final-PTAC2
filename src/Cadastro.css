@@ -9,13 +9,15 @@
     font-weight: 500;
     font-size: 20px;
     text-align: center;
+    background-color: #f4f4f4;
   }
-  
+
 
   .flex-container > div {
     margin: 10px;
     padding: 20px;
   }
+
   
   .button {
     display: inline-block;
