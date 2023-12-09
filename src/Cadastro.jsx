@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Cadastro.css";
+import styles from "./Componentes/Cadastro.module.css";
 
 function Videos() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista") || "[]");
@@ -30,11 +30,13 @@ function addVideo(e) {
   }, [dadosVideo]);
 
 
-  return(
-    <div className="container">
+  return (
+    <div className={styles.cadastro}>
+    <div className={styles.cadastroBody}>
+    <div className={styles.container}>
 
-    <div className="form">
-        <div className="flex-container">
+    <div className={styles.form}>
+        <div className={styles.flex_container}>
           <div>
             <label>Titulo: </label>
             <input
@@ -68,11 +70,13 @@ function addVideo(e) {
         </div>
     </div>
 
-    <button className="button" onClick={addVideo}>
+    <button className={styles.button} onClick={addVideo}>
           Adicionar Video
         </button>
       </div>
-
+      </div>
+      
+</div>
   );
 }
   export default Videos;

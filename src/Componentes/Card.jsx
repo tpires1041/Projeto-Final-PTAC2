@@ -1,9 +1,11 @@
 import React from "react";
+import styles from "./Card.module.css";
 
 function YoutubeEmbed(props) {
     const { videoId } = props;
   
     return (
+      <div className={styles.iframe}>
       <iframe
         width="560"
         height="315"
@@ -13,6 +15,7 @@ function YoutubeEmbed(props) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
+      </div>
     );
   }
   
