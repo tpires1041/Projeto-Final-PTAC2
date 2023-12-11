@@ -24,6 +24,7 @@ function addVideo(e) {
         url: url,
         canal: canal,
         data: data,
+        aeronave: aeronave
       },
     ]);
     setId(id + 1);
