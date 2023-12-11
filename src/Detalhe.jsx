@@ -14,10 +14,16 @@ export default function Detalhe(){
         <div>
             <Menu />
             <div className={styles.card_container}>
-            <Card voos={filtraId}/>
-            <h2>{filtraId.canal}</h2>
-            <h2>{filtraId.data}</h2>
-            <h2>{filtraId.aeronave}</h2>
+                <iframe
+                    width="300"
+                    height="200"
+                    src={`https://www.youtube.com/embed/${filtraId.url.slice(17)}`}
+                    title="Vídeo"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                ></iframe>
+                <h2>Título: {filtraId.titulo}</h2>
             </div>
         </div>
      );
