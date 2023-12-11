@@ -24,6 +24,10 @@ export default function Detalhe(){
                     allowFullScreen
                 ></iframe>
                 <h2>Título: {filtraId.titulo}</h2>
+                <p>Descrição: {filtraId.descricao}</p>
+                <h2>Canal: {filtraId.canal}</h2>
+                <h2>Data: {filtraId.data}</h2>
+                <h2>Aeronave: {filtraId.aeronave}</h2>
             </div>
         </div>
      );
