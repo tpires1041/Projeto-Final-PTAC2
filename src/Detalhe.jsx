@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Menu from './Componentes/Menu';
-import './Componentes/Menu.module.css';
-import Card from './Componentes/Card'
+import styles from './Componentes/Detalhe.module.css';
+import Card from './Componentes/Card';
 import { useParams } from 'react-router-dom';
-
-
-
 
 export default function Detalhe(){
     const {id} = useParams()
@@ -16,8 +13,12 @@ export default function Detalhe(){
     return(
         <div>
             <Menu />
+            <div className={styles.card_container}>
             <Card voos={filtraId}/>
             <h2>{filtraId.canal}</h2>
+            <h2>{filtraId.data}</h2>
+            <h2>{filtraId.aeronave}</h2>
+            </div>
         </div>
      );
 }

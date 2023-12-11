@@ -22,7 +22,9 @@
     position: fixed;
     height: 100%;
     overflow: auto;
+    
   }
+
   
   li a {
     display: block;

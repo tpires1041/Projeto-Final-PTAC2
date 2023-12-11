@@ -19,8 +19,8 @@ export default function Card({ voos}) {
                 ></iframe>
                 <h2>Título: {voos.titulo}</h2>
                 <p>Descrição: {voos.descricao}</p>
-                <Link className={styles.button} to={`/detalhe/${voos.id}`}>
-                    <button>Mais detalhes</button>
+                <Link  style={{ textDecoration: 'none' }} to={`/detalhe/${voos.id}`}>
+                    <button className={styles.button}>Mais detalhes</button>
                 </Link>
                 <br />
             </div>
