@@ -3,8 +3,13 @@
   font-weight: 500;
   font-size: 20px;
   margin: 0;
+  opacity: 0;
+  transition: opacity 0.2s;
   }
 
+  .menuBody:hover {
+    opacity: 1;
+}
   .titulo  {
     text-align: center;
   }

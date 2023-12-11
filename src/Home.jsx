@@ -12,6 +12,8 @@ export default function Home(){
         <div className={styles.homeBody}>
             <Header />
             <Menu />
+            <br />
+            <h2 className={styles.h2Bemvindo}>Bem-vindo!</h2>
             <div className={styles.card_container}>
             {video.map((videos, index) => (
                             <Card key={index} voos={videos} />
