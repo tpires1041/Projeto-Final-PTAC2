@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Componentes/Cadastro.module.css";
+import Menu from './Componentes/Menu.jsx';
 
 export default function Videos() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista") || "[]");
@@ -35,14 +36,17 @@ function addVideo(e) {
 
 
   return (
+    <div>
+    <Menu />
     <div className={styles.cadastro}>
     <div className={styles.cadastroBody}>
     <div className={styles.container}>
+    
 
     <div className={styles.form}>
         <div className={styles.flex_container}>
           <div>
-            <label>Titulo: </label>
+            <label>Título: </label>
             <input
               type="text"
               value={titulo}
@@ -110,6 +114,7 @@ function addVideo(e) {
       </div>
       </div>
       
+</div>
 </div>
   );
 }
