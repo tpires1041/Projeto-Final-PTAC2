@@ -23,6 +23,7 @@ function addVideo(e) {
         descricao: descricao,
         url: url,
         canal: canal,
+        data: data,
       },
     ]);
     setId(id + 1);
