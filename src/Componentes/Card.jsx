@@ -8,6 +8,7 @@ export default function Card({ voos}) {
     return (
             <div className="col">
                 <br/>
+                <br/>
                 <iframe
                     width="300"
                     height="200"
@@ -22,7 +23,8 @@ export default function Card({ voos}) {
                 <Link  style={{ textDecoration: 'none' }} to={`/detalhe/${voos.id}`}>
                     <button className={styles.button}>Mais detalhes</button>
                 </Link>
-                <br />
+                <br/>
+                <br/>
             </div>
     );
 }

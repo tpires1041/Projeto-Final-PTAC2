@@ -24,13 +24,16 @@ function addVideo(e) {
         url: url,
         canal: canal,
         data: data,
-        aeronave: aeronave
+        aeronave: aeronave,
       },
     ]);
     setId(id + 1);
     setTitulo("");
     setDescricao("");
     setUrl("");
+    setCanal("");
+    setData("");
+    setAeronave("");
   }
 
   useEffect(() => {
